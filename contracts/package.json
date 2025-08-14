@@ -1,0 +1,65 @@
+{
+  "name": "base-governance-dao",
+  "version": "1.0.0",
+  "description": "A decentralized autonomous organization (DAO) built on Base blockchain for community governance and decision-making",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network base-goerli",
+    "deploy:mainnet": "hardhat run scripts/deploy.js --network base-mainnet",
+    "verify": "hardhat verify",
+    "coverage": "hardhat coverage",
+    "lint": "solhint 'contracts/**/*.sol'",
+    "lint:fix": "solhint 'contracts/**/*.sol' --fix",
+    "format": "prettier --write 'contracts/**/*.sol'",
+    "clean": "hardhat clean",
+    "node": "hardhat node",
+    "start": "npm run node"
+  },
+  "keywords": [
+    "dao",
+    "governance",
+    "base",
+    "blockchain",
+    "ethereum",
+    "solidity",
+    "defi",
+    "web3",
+    "smart-contracts",
+    "decentralized"
+  ],
+  "author": "Base Governance DAO Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wearedood/base-governance-dao.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wearedood/base-governance-dao/issues"
+  },
+  "homepage": "https://basegovernance.dao",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@openzeppelin/hardhat-upgrades": "^3.0.0",
+    "hardhat": "^2.19.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.5",
+    "solhint": "^4.0.0",
+    "prettier": "^3.0.0",
+    "prettier-plugin-solidity": "^1.2.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "@openzeppelin/contracts-upgradeable": "^5.0.0",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
